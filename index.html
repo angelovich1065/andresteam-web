@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andres Team · Golf</title>
+  <meta name="description" content="Andres Team — equipo de golf de Andrés Asín.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body { height: 100%; }
+
+    body {
+      font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+      background: radial-gradient(ellipse at 50% 35%, #ffffff 0%, #f2f0eb 70%, #e9e6df 100%);
+      color: #1a1a1a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100%;
+      padding: 24px;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 34px;
+      animation: aparecer 1.2s ease-out both;
+    }
+
+    @keyframes aparecer {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo {
+      width: min(360px, 78vw);
+      height: auto;
+    }
+
+    .separador {
+      width: 56px;
+      height: 2px;
+      background: #1a1a1a;
+      opacity: .8;
+    }
+
+    .lema {
+      font-size: 15px;
+      letter-spacing: .42em;
+      text-indent: .42em; /* compensa el espaciado de la última letra para centrar bien */
+      text-transform: uppercase;
+      color: #555;
+      text-align: center;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 18px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: .08em;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="logo.png" alt="Andrés Asín — logotipo del equipo">
+    <div class="separador"></div>
+    <p class="lema">Golf</p>
+  </main>
+  <footer>© 2026 Andres Team · andresteam.com</footer>
+</body>
+</html>
